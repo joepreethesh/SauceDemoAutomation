@@ -88,7 +88,7 @@ def step_impl(context):
     assert CheckOutOverviewStatus, "Check Out overview page is not displayed"
     time.sleep(2)
 
-@then(u'check the total price equlal to the items price')
+@then(u'check the total price equlal to the items price excluding tax')
 def step_impl(context):
     total_tax= 0.0
     totalCost = 0.0
@@ -105,10 +105,14 @@ def step_impl(context):
     if tax_match:
         total_tax = float(tax_match.group())
 
+    print("inventoryPriceList", inventoryPriceList)
+
     for i in range(len(inventoryPriceList) - 1):
         current_price = float(inventoryPriceList[i][1:])
         next_price = float(inventoryPriceList[i + 1][1:])
-    total_price = float(current_price + next_price) + float(total_tax)
+    print("current_price", current_price)
+    print("next price",  current_price)
+    total_price = float(current_price + next_price)
 
     assert int(totalCost) == int(total_price), "Items price not matching with total cost"
     time.sleep(2)

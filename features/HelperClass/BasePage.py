@@ -55,6 +55,7 @@ class BasePage():
         inventoryItemList = self.driver.find_elements(locator, ConfigReader.readConfig(configFileName,locatorName))
         for element in inventoryItemList:
             inventoryItems.append(element.text)
+        print("inventor items", inventoryItems)
         return inventoryItems
 
     def addItemsToCart(self, locator, configFileName, locatorName, cartItems):

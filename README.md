@@ -22,7 +22,7 @@ This project uses Behave for BDD (Behavior-Driven Development) testing with Pyth
         steps: Step definitions and other testing-related Python code.
         allure-results: Stores Allure report data.
         
-6. Python verison - 3.11, Chrome browser version - 117
+6. Python verison - 3.11, Chrome browser version - 117, allure version - 2.29.0 OS - Mac
 
     
 

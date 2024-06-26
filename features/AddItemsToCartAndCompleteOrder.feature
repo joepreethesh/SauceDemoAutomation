@@ -23,7 +23,7 @@ Feature: Validating adding items to cart and order completion
     Then enter details in the text fields
     When clicked on continue button
     Then Checkout Overview page is displayed
-    Then check the total price equlal to the items price
+    Then check the total price equlal to the items price excluding tax
     When clicked on Finish button
     Then Checkout Complete page is displayed
     When clicked on BackHome button
