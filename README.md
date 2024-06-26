@@ -6,7 +6,7 @@ This project uses Behave for BDD (Behavior-Driven Development) testing with Pyth
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/joepreethesh/AutomationAssignment.git
+   git clone https://github.com/joepreethesh/SauceDemoAutomation.git
    cd your-automation-project
 
 2. Install dependencies from requirements.txt file - pip install -r requirements.txt
