@@ -16,6 +16,7 @@ Feature: Validating Login functionality for Standard_User and Performance_Glitch
     |standard_user|
     |performance_glitch_user|
 
+  @smoke
   Scenario Outline:
     Then User enters Invalid credentials "<Invaliduser>"
     Then User clicks on Login Button

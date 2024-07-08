@@ -5,7 +5,7 @@ import allure
 from selenium import webdriver
 def before_scenario(context, scenario):
     print("chrome driver executing")
-    chrome_driver_path = os.path.abspath(os.path.join('webdriver', 'chromedriver'))
+    chrome_driver_path = os.path.abspath(os.path.join('webdriver', 'chromedriver.exe'))
     print("Chromedriver Path:", chrome_driver_path)
     #print("System PATH:", os.environ['PATH'])
     #os.environ['PATH'] = f"{os.environ['PATH']}:{os.path.dirname(chrome_driver_path)}"
